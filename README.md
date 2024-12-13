@@ -31,6 +31,7 @@
 [Service]
 Environment = 'http_proxy=http://172.19.0.3:8080' 'https_proxy=http://172.19.0.3:8080' 'DOCKER_ENABLE_DEPRECATED_PULL_SCHEMA_1_IMAGE=1'
 ---
+```
 
 * Dockerクライアントを設定する
 ```
@@ -65,6 +66,5 @@ Environment = 'http_proxy=http://172.19.0.3:8080' 'https_proxy=http://172.19.0.3
 * 確認
 ```
 # docker pull hello-world
-
 # docker run hello-world
 ```
