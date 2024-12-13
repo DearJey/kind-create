@@ -12,7 +12,7 @@ $ sudo mv ./kind /usr/local/bin/kind
 $ unset https_proxy
 ```
 
-* yamlファイルの作成(各バージョンファイルの作成)
+* yamlファイルの作成(各バージョンフォルダ内のyamlファイルを参照)
 
 * cluster作成
 ```
