@@ -1,5 +1,23 @@
 # kind-create
 
+## [kindクラスタ構築](https://kind.sigs.k8s.io/docs/user/quick-start/#:~:text=%E9%85%8D%E7%BD%AE%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,Linux%E3%81%AE%E5%A0%B4%E5%90%88,-%3A)
+
+* kindインストール
+```
+$ export https_proxy=http://172.19.0.3:8080
+$ [ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.25.0/kind-linux-amd64
+$ [ $(uname -m) = aarch64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.25.0/kind-linux-arm64
+$ chmod +x ./kind
+$ sudo mv ./kind /usr/local/bin/kind
+$ unset https_proxy
+```
+
+* yamlファイルの作成(各バージョンファイルの作成)
+
+* cluster作成
+```
+# kind create cluster --config kind.yaml
+```
 
 ### Dockerインストール(RHEL環境)
 
